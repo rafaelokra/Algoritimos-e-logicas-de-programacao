@@ -31,4 +31,6 @@ if (result) {
   alert("Reprovado")
 } else {
   alert(student + " estude para sua prova de recuperação! Sua média foi de: " +  average)
+
 }
+
