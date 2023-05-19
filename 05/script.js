@@ -18,8 +18,14 @@
  
  
  
- const result = prompt("Adivinhe o numero que estou pensando? esta entre 0 e 10")
+ let result = prompt("Adivinhe o numero que estou pensando? esta entre 0 e 10")
  const randomNumber = Math.round(Math.random() * 10)
- const match = Number(result) == randomNumber
+ 
+ let xAttempts = 1
 
-    console.log(result,randomNumber,match)
+ while(Number(result) != randomNumber) {
+  result = prompt("Erro, tente novamente:")
+  xAttempts++
+ }
+
+ alert(`Parabéns! O número que eu pensei foi ${randomNumber} e você advinhou o número em ${xAttempts} tentativas`)
